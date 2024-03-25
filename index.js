@@ -35,9 +35,9 @@ function filterSeals() {
             let searchfilter
 
             if (searchbox.value == null) { searchfilter = "" }
-            else searchfilter = searchbox.value;
+            else searchfilter = searchbox.value.toLowerCase();
 
-            return (seal.title.includes(searchfilter) && (
+            return (seal.title.toLowerCase().includes(searchfilter) && (
                 seal.tags.includes("Military") && military.checked ||
                 seal.tags.includes("Federal") && federal.checked ||
                 seal.tags.includes("State") && state.checked)
