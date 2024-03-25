@@ -5,33 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Seals of the US</title>
+    <title>Seals and the US</title>
     <link rel="stylesheet" href="style.css">
     <script defer type="module" src="index.js"></script>
-    <script type="module src="seals.js"></script>
+    <script type="module src=" seals.js"></script>
 </head>
 
 <body style="background-color: #FAFAFA;">
     <div class="titlebar">
         <div class="titlebarbox title">
-            Seals of the US
+            Seals and Insignia of the US
         </div>
         <div class="titlebarbox">
             <input class="searchbar" type="text" id="searchbar">
         </div>
         <div class="verticalcontainer tickboxes">
-            <div> 
+            <div>
                 <label for="federalbox">Federal</label>
                 <input type="checkbox" id="federalbox" checked>
             </div>
-            <div> 
+            <div>
                 <label for="statebox">State</label>
                 <input type="checkbox" id="statebox">
             </div>
-            <div> 
+            <div>
                 <label for="military">Military</label>
                 <input type="checkbox" id="militarybox" checked>
             </div>
+        </div>
+        <div class="verticalcontainer tickboxes">
+            <div>
+                <label for="federalbox">Historical</label>
+                <input type="checkbox" id="historicalbox" checked>
+            </div>
+            <div>
+                <label for="statebox">Tribal</label>
+                <input type="checkbox" id="tribalbox">
+            </div>
+        </div>
+        <div class="gitlink">
+            <a href="https://github.com/AlexHagood/sealofus" class="gitlink">
+                <img src="github.png" class="gitimg">
+            </a>
         </div>
     </div>
     <div id="grid">
