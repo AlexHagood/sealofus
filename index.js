@@ -12,11 +12,15 @@ let drawlist = Array.from(seallist);
 let currentdrawn = drawlist;
 drawArray(currentdrawn);
 
+
 //Tags
 let military = document.getElementById("militarybox");
 let state = document.getElementById("statebox");
 let federal = document.getElementById("federalbox");
+let tribal = document.getElementById("tribalbox");
+let historical = document.getElementById("historicalbox");
 let searchbox = document.getElementById("searchbar");
+
 
 military.addEventListener('change', drawSeals);
 state.addEventListener('change', drawSeals);
@@ -40,7 +44,9 @@ function filterSeals() {
             return (seal.title.includes(searchfilter) && (
                 seal.tags.includes("Military") && military.checked ||
                 seal.tags.includes("Federal") && federal.checked ||
-                seal.tags.includes("State") && state.checked)
+                seal.tags.includes("State") && state.checked ||
+                seal.tags.includes("Tribal") && state.checked ||
+                seal.tags.includes("Historical") && historical.checked)
             )
         });
     }
@@ -65,13 +71,8 @@ function drawSeals() {
         console.log("Seals to remove", subtractedSeals);
 
         subtractedSeals.forEach(seal => {
+            
             seal = document.getElementById(seal.id);
-
-            seal.addEventListener('transitionend', () => {
-                // Remove the DOM element once the transition is finished
-                //seal.remove();
-            });
-
             seal.classList.add('hideme');
 
         });
