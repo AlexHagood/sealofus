@@ -25,6 +25,8 @@ let searchbox = document.getElementById("searchbar");
 military.addEventListener('change', drawSeals);
 state.addEventListener('change', drawSeals);
 federal.addEventListener('change', drawSeals);
+tribal.addEventListener('change', drawSeals);
+historical.addEventListener('change', drawSeals);
 searchbox.addEventListener('input', drawSeals);
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
