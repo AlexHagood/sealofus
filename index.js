@@ -47,7 +47,7 @@ function filterSeals() {
                 seal.tags.includes("Military") && military.checked ||
                 seal.tags.includes("Federal") && federal.checked ||
                 seal.tags.includes("State") && state.checked ||
-                seal.tags.includes("Tribal") && state.checked ||
+                seal.tags.includes("Tribal") && tribal.checked ||
                 seal.tags.includes("Historical") && historical.checked)
             )
         });
