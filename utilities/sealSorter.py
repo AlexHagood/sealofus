@@ -36,7 +36,7 @@ else:
     if (os.path.isdir(imageFolder)):
         print(f"Sorting seals in folder {imageFolder}")
     else:
-        print("ERROR! Folder does not exist.")
+        print(f"ERROR! Folder ${imageFolder} does not exist.")
         quit();
 
 sealList = []
