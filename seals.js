@@ -552,7 +552,12 @@ const seallist = [
     id: "OR",
     tags: ["State"],
   },
-  { path: "sealimgs/Hopi_seal.svg", title: "Hopi Tribe", id: "hopi", tags: ["Tribal"] },
+  {
+    path: "sealimgs/Hopi_seal.svg",
+    title: "Hopi Tribe",
+    id: "hopi",
+    tags: ["Tribal"],
+  },
   {
     path: "sealimgs/Great_Seal_of_the_Navajo_Nation.svg",
     title: "Navajo Nation",
@@ -576,6 +581,66 @@ const seallist = [
     title: "Oklahoma",
     id: "OK",
     tags: ["State"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_Office_of_the_Director_of_National_Intelligence.svg",
+    title: "Office of the Director of National Intelligence",
+    id: "ODNI",
+    tags: ["Federal"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_Central_Intelligence_Agency.svg",
+    title: "Central Intelligence Agency",
+    id: "CIA",
+    tags: ["Federal"],
+  },
+  {
+    path: "sealimgs/US-NationalGeospatialIntelligenceAgency-2008Seal.svg",
+    title: "National Geospatial-Intelligence Agency",
+    id: "NGIA",
+    tags: ["Federal"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_Coast_Guard_Intelligence.svg",
+    title: "Coast Guard Intelligence",
+    id: "CGI",
+    tags: ["Military"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_United_States_Army_Military_Intelligence_Corps.svg",
+    title: "Military Intelligence Corps",
+    id: "MIC",
+    tags: ["Military"],
+  },
+  {
+    path: "sealimgs/Final_ONI_seal.png",
+    title: "Office of Naval Intelligence",
+    id: "ONI",
+    tags: ["Military"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_U.S._National_Security_Agency.svg",
+    title: "National Security Agency",
+    id: "NSA",
+    tags: ["Federal"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_United_States_Intelligence_Community.svg",
+    title: "United States Intelligence Community",
+    id: "USIC",
+    tags: ["Federal"],
+  },
+  {
+    path: "sealimgs/Seal_of_the_U.S._Defense_Intelligence_Agency.svg",
+    title: "Defense Intelligence Agency",
+    id: "DIA",
+    tags: ["Military"],
+  },
+  {
+    path: "sealimgs/Bureau_of_Intelligence_and_Research_Seal.svg",
+    title: "Bureau of Intelligence and Research",
+    id: "INR",
+    tags: ["Federal"],
   },
 ];
 export default seallist;
